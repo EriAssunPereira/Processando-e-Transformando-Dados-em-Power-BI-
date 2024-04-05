@@ -1,0 +1,44 @@
+1. **Crie uma instância do Azure para MySQL**:
+   - Configure uma instância no Azure para MySQL.
+   
+2. **Crie o banco de dados no GitHub**:
+   - Crie um banco de dados utilizando os dados disponíveis no GitHub.
+   
+3. **Integre o Power BI ao MySQL no Azure**:
+   - Conecte o Power BI ao seu banco de dados MySQL hospedado no Azure.
+   
+4. **Diretrizes para transformação de dados**:
+   - Aqui estão as etapas para transformar os dados:
+     1. **Verifique cabeçalhos e tipos de dados**:
+        - Verifique os cabeçalhos das colunas e garanta os tipos de dados corretos.
+     2. **Converter valores monetários em precisão dupla**:
+        - Modifique os valores monetários para usar o tipo de dados de precisão dupla.
+     3. **Tratar valores nulos**:
+        - Analise e decida se deseja remover valores nulos.
+        - Funcionários com valores nulos em `Super_ssn` podem ser gerentes. Verifique se algum funcionário está sem gestor.
+        - Verifique se algum departamento carece de gerente.
+        - Se um departamento não tiver um gestor, assuma que tem os dados necessários e preencha as lacunas.
+     4. **Verifique o horário do projeto**:
+        - Examine o número de horas para cada projeto.
+5. **Combinar Colunas Complexas**:
+        - Mesclar colunas complexas conforme necessário.
+     6. **Mesclar consultas de funcionários e departamentos**:
+        - Crie uma tabela que associe os nomes dos funcionários aos seus respectivos departamentos.
+        - Utilize a tabela de funcionários como base para fusão.
+        - Elimine colunas desnecessárias durante este processo.
+     7. **Junte funcionários com nomes de gerentes**:
+        - Junte os funcionários com seus respectivos nomes de gerentes (usando SQL ou Power BI).
+        - Especifique a consulta usada se você escolher SQL.
+     8. **Combine Nome e Sobrenome**:
+        - Mesclar o nome e o sobrenome dos funcionários em uma única coluna.
+     9. **Mesclar nomes e locais de departamentos**:
+        - Combine nomes e locais de departamentos para criar combinações exclusivas.
+        - Isso ajudará na criação de um esquema em estrela em um módulo futuro.
+     10. **Por que mesclar em vez de atribuir?**:
+         - Neste caso, a fusão é preferível à atribuição porque permite mais flexibilidade e atualizações dinâmicas.
+     11. **Funcionários do Grupo por Gerente**:
+         - Agrupe os dados para determinar quantos funcionários se reportam a cada gerente.
+     12. **Remover colunas desnecessárias**:
+         - Elimine quaisquer colunas que não serão utilizadas no relatório final.
+
+https://academiapme-my.sharepoint.com/:w:/g/personal/renato_dio_me/EVxAxO7akV5FoNy3mOk_3QwB3wKeyXMaFUi3ekTLQkY_sA?e=eJc3La
